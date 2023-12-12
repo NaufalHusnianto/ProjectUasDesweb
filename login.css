@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000d3e;
+    overflow: hidden;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* HEADER */
+header {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1 {
+    margin-left: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+header nav h1 span {
+    color: palevioletred;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+    border-radius: 9999px;
+}
+
+header nav ul li a:hover {
+    background-color: palevioletred;
+}
+
+header nav button {
+    margin-right: 4rem;
+    padding: .5rem;
+    border-radius: 999px;
+    width: 6rem;
+    margin-left: 6rem;
+    background-color: palevioletred;
+    color: white;
+    border: none;
+}
+
+header nav button:hover {
+    background-color: white;
+    color: palevioletred;
+}
+/* HEADER END */
+
+/* MAIN */
+main {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+main form {
+    width: 25rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+main form h2 {
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+main form h2 span {
+    color: palevioletred;
+}
+
+main form p {
+    margin: .5rem;
+}
+
+main form p input {
+    padding: 1rem;
+    width: 15rem;
+    border-radius: 9999px;
+    border: none;
+    font-size: 1rem;
+}
+
+main form p button {
+    padding: .8rem;
+    width: 15rem;
+    border-radius: 9999px;
+    margin-top: 1rem;
+}
+
+main form p a {
+    font-size: smaller;
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+main form p a:hover {
+    color: palevioletred;
+}
+/* MAIN END */

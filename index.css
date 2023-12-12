@@ -1,0 +1,258 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000b34;
+    overflow: hidden;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* HEADER */
+header {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1 {
+    color: palevioletred;
+    font-size: 2rem;
+}
+
+header nav h1 span {
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: .2rem;
+
+}
+
+header nav ul li a:hover {
+    background-color: palevioletred;
+    border-radius: 999px;
+    transition: ease-in-out;
+}
+
+header nav ul li button {
+    background-color: palevioletred;
+    border-radius: 999px;
+    padding: .5rem;
+    width: 5rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+header nav ul li button:hover {
+    background-color: white;
+    color: palevioletred;
+}
+/* HEADER END */
+/* MAIN */
+main {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+main .content-1 {
+    width: 50vw;
+    height: 100%;
+    color: white;
+    padding-left: 6rem;
+    padding-right: 5rem;
+}
+
+main .content-1 h1 {
+    font-size: 3rem;
+    font-family: 'PT Serif', serif;
+    margin: 1rem;
+    margin-left: 0;
+    font-weight: lighter;
+}
+
+main .content-1 h1 span {
+    color: palevioletred;
+}
+
+main .content-1 p {
+    margin-top: 2rem;
+}
+
+main .content-1 button {
+    border-radius: 9999px;
+    padding: .5rem;
+    background-color: gold;
+    font-weight: bold;
+    border: none;
+}
+
+main .content-1 button:hover {
+    background-color: white;
+}
+
+main .content-2 {
+    width: 50vw;
+    height: 100%;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes idleUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+main .bola {
+    width: 17rem;
+    position: absolute;
+    right: 16rem;
+    top: 6rem;
+    animation: rotate 10s ease infinite;
+}
+
+main .tapal-kuda {
+    width: 32rem;
+    position: absolute;
+    top: 13rem;
+    right: 6rem;
+    animation: idleUpDown 5s ease infinite alternate;
+}
+/* MAIN END */
+
+
+/* Tablet Portrait */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header nav {
+        width: 90%;
+    }
+
+    header nav h1 {
+        font-size: 2.5rem;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        width: 100%;
+        max-width: 400px; 
+    }
+
+    header nav ul li {
+        width: calc(30% - 0.5rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .content-1,
+    main .content-2 {
+        width: 90%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    main .content-1 {
+        padding: 1rem;
+        margin-top: 2.5rem;
+    }
+
+    main .content-2 {
+        display: none;
+    }
+
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 767px) {
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul li {
+        width: calc(30% - 0.5rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .content-1,
+    main .content-2 {
+        width: 90%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    main .content-1 {
+        padding: 1rem;
+        margin-top: 2.5rem;
+    }
+
+    main .content-2 {
+        display: none;
+    }
+}
